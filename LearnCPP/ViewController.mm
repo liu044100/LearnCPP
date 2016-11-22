@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 #import <vector>
+#import <string>
+#import <iostream>
 
 @interface ViewController ()
 
@@ -32,6 +34,17 @@ public:
     DoubleInt operator+(const int &rhs) {
         return DoubleInt(x + rhs, y + rhs);
     }
+};
+
+using namespace std;
+class Person {
+public:
+    Person(string name):name(name){};
+    void doADance() {
+        cout << this->name << "dance!!!" << endl;
+    }
+private:
+    string name;
 };
 
 
@@ -76,18 +89,38 @@ public:
     
     int first = v[1];
     int outOfBounds = v.at(100);
+    
+    // shared point
+    std::shared_ptr<int> p1(new int(1)); ///< Use count = 1
+    
+    BOOL doSomething = YES;
+    if (doSomething) {
+        std::shared_ptr<int> p2 = p1; ///< Use count = 2;
+        // Do something with p2
+    }
+    
+    // p2 has gone out of scope and destroyed, so use count = 1
+    
+    p1.reset();
+    
+    // p1 reset, so use count = 0
+    // The underlying int* is deleted
+    
+    std::shared_ptr<Person> person1(new Person("Matt Galloway"));
+    person1->doADance(); ///< Make Matt dance
+    
+    // dereference
+    Person person2 = *person1;
+    person2.doADance();
+    
+    // virtual == Protocol Extension in swift
+    
+    // template == Generic Type in swift
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end
