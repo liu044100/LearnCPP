@@ -14,6 +14,7 @@
 		B71366541DE3DCDE0029B558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71366531DE3DCDE0029B558 /* Assets.xcassets */; };
 		B71366571DE3DCDE0029B558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71366551DE3DCDE0029B558 /* LaunchScreen.storyboard */; };
 		B7D86A261DE53E63001269E9 /* Greeting.mm in Sources */ = {isa = PBXBuildFile; fileRef = B7D86A251DE53E62001269E9 /* Greeting.mm */; };
+		B7D86A441DE96794001269E9 /* LearnC.c in Sources */ = {isa = PBXBuildFile; fileRef = B7D86A431DE96794001269E9 /* LearnC.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		B71366581DE3DCDE0029B558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7D86A241DE53E62001269E9 /* Greeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Greeting.h; sourceTree = "<group>"; };
 		B7D86A251DE53E62001269E9 /* Greeting.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Greeting.mm; sourceTree = "<group>"; };
+		B7D86A431DE96794001269E9 /* LearnC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LearnC.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				B713664E1DE3DCDE0029B558 /* ViewController.mm */,
 				B7D86A241DE53E62001269E9 /* Greeting.h */,
 				B7D86A251DE53E62001269E9 /* Greeting.mm */,
+				B7D86A431DE96794001269E9 /* LearnC.c */,
 				B71366501DE3DCDE0029B558 /* Main.storyboard */,
 				B71366531DE3DCDE0029B558 /* Assets.xcassets */,
 				B71366551DE3DCDE0029B558 /* LaunchScreen.storyboard */,
@@ -157,6 +160,7 @@
 			files = (
 				B713664F1DE3DCDE0029B558 /* ViewController.mm in Sources */,
 				B713664C1DE3DCDE0029B558 /* AppDelegate.mm in Sources */,
+				B7D86A441DE96794001269E9 /* LearnC.c in Sources */,
 				B7D86A261DE53E63001269E9 /* Greeting.mm in Sources */,
 				B71366491DE3DCDE0029B558 /* main.m in Sources */,
 			);
