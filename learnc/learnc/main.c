@@ -80,5 +80,31 @@ int main(int argc, const char * argv[]) {
     maxval = (*pmax)(x, y);
     printf("Max value: %d\n", maxval);
     
+    
+    struct{
+        char *name;  //姓名
+        int num;  //学号
+        int age;  //年龄
+        char group;  //所在小组
+        float score;  //成绩
+    } stu1 = { "Tom", 12, 18, 'A', 136.5 }, *pstu = &stu1;
+    //读取结构体成员的值
+    printf("%s的学号是%d，年龄是%d，在%c组，今年的成绩是%.1f！\n", (*pstu).name, (*pstu).num, (*pstu).age, (*pstu).group, (*pstu).score);
+    printf("%s的学号是%d，年龄是%d，在%c组，今年的成绩是%.1f！\n", pstu->name, pstu->num, pstu->age, pstu->group, pstu->score);
+    
+    enum week{ Mon = 1, Tues, Wed, Thurs, Fri, Sat, Sun } day;
+    scanf("%d", &day);
+    switch(day){
+        case Mon: puts("Monday"); break;
+        case Tues: puts("Tuesday"); break;
+        case Wed: puts("Wednesday"); break;
+        case Thurs: puts("Thursday"); break;
+        case Fri: puts("Friday"); break;
+        case Sat: puts("Saturday"); break;
+        case Sun: puts("Sunday"); break;
+        default: puts("Error!");
+    }
+
+    
     return 0;
 }
