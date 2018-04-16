@@ -11,6 +11,9 @@
 #define NUM1 10
 #define NUM2 20
 
+typedef char (*PTR_TO_ARR)[30];
+typedef int (*PTR_TO_FUNC)(int, int);
+
 //返回两个数中较大的一个
 int max(int a, int b){
     return a>b ? a : b;
